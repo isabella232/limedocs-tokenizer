@@ -1,6 +1,6 @@
 {
-	"name": "nette/tokenizer",
-	"description": "Nette Tokenizer",
+	"name": "limedocs/limedocs-tokenizer",
+	"description": "Limedocs Tokenizer",
 	"homepage": "http://nette.org",
 	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
 	"authors": [
@@ -9,9 +9,12 @@
 			"homepage": "http://davidgrudl.com"
 		},
 		{
-			"name": "Nette Community",
-			"homepage": "http://nette.org/contributors"
-		}
+            "name": "Nette Community",
+            "homepage": "http://nette.org/contributors"
+        },
+        {
+            "name": "Matthias Etienne"
+        }
 	],
 	"require": {
 		"php": ">=5.3.1"
@@ -19,16 +22,8 @@
 	"require-dev": {
 		"nette/tester": "~1.0"
 	},
-	"conflict": {
-		"nette/nette": "<2.2"
-	},
 	"autoload": {
 		"classmap": ["src/"]
 	},
-	"minimum-stability": "dev",
-	"extra": {
-		"branch-alias": {
-			"dev-master": "2.3-dev"
-		}
-	}
+	"minimum-stability": "dev"
 }
