@@ -9,11 +9,7 @@
  * the file license.txt that was distributed with this source code.
  */
 
-namespace Nette\Utils;
-
-use Nette;
-
-
+namespace Limedocs\Utils;
 
 /**
  * The exception that indicates tokenizer error.

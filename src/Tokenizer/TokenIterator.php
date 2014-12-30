@@ -5,10 +5,7 @@
  * Copyright (c) 2004 David Grudl (http://davidgrudl.com)
  */
 
-namespace Nette\Utils;
-
-use Nette;
-
+namespace Limedocs\Utils;
 
 /**
  * Traversing helper.
