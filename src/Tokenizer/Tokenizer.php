@@ -61,7 +61,7 @@ class Tokenizer
 						$type = $this->types[$i - 1]; break;
 					}
 				}
-				$match = array(self::VALUE => $match[0], self::OFFSET => $len, self::TYPE => $type);
+				$match = array(self::VALUE => $match[0], self::OFFSET => $len, 'capture' => $this->filterMatch($match), self::TYPE => $type);
 				$len += strlen($match[self::VALUE]);
 			}
 			if ($len !== strlen($input)) {
@@ -83,6 +83,13 @@ class Tokenizer
 		}
 		return $tokens;
 	}
+
+    protected function filterMatch($arr) {
+        array_shift($arr);
+        return array_filter($arr, function($key){
+            return false === is_int($key);
+        }, ARRAY_FILTER_USE_KEY);
+    }
 
 
 	/**
